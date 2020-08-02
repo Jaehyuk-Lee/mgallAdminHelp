@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>마갤 관리 도우미</title>
+    <script src="./script.js"></script>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div id="makeBanMsg">
+        <div class="desc">
+            <h3>금칙어 생성 규칙</h3>
+            <ol>
+                <li>줄바꿈 및 띄어쓰기는 모두 ','로 교체</li>
+                <li>한글자짜리 단어는 삭제</li>
+                <li>여러 번 중복되는 ','는 한 개로 바꿔줌</li>
+            </ol>
+        </div>
+        <div class="action">
+            <textarea id="beforeBanMsg" id="" cols="30" rows="10"></textarea>
+            <button onclick="javascript:getBannedMsg">금칙어<br>생성</button>
+            <textarea id="afterBanMsg" id="" cols="30" rows="10"></textarea>
+        </div>
+    </div>
+</body>
+</html>
